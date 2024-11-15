@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Protection Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-shield-alt"></i> Network Protection Simulation</h1>
+        <div id="simulation-area">
+            <p id="step-counter" class="step-counter">Step 1 of 5</p>
+            <p id="instruction" class="instruction"></p>
+            <div id="terminal" class="terminal">
+                <pre id="output">Welcome to the Network Protection Simulation. Awaiting your command...</pre>
+            </div>
+            <form id="command-form" class="command-form">
+                <label for="command-input" class="sr-only">Enter command</label>
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-terminal"></i></span>
+                    <input type="text" id="command-input" placeholder="Enter your command" aria-label="Enter your command">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="status-area" class="status-area">
+                <p id="status" class="status"><i class="fas fa-spinner fa-spin"></i> Simulation in progress</p>
+                <p id="score" class="score"><i class="fas fa-star"></i> Score: 0</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
